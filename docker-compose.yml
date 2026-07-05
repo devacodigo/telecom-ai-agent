@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  telecom-agent:
+    build: .
+    environment:
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    volumes:
+      - ./agent.log:/app/agent.log
+    stdin_open: true
+    tty: true

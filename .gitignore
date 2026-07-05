@@ -1,0 +1,18 @@
+# API keys — never push these
+.env
+
+# Virtual environment — too large, not needed
+venv/
+
+# Python cache files — auto-generated, not needed
+__pycache__/
+*.pyc
+*.pyo
+
+# Log files — too noisy for GitHub
+agent.log
+eval.log
+
+# FAISS index if saved locally
+*.faiss
+*.pkl
