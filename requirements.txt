@@ -1,0 +1,15 @@
+langchain
+langchain-core
+langchain-community
+langchain-google-genai
+langchain-groq
+langchain-text-splitters
+groq
+google-generativeai
+faiss-cpu
+pypdf
+wikipedia
+python-dotenv
+uvicorn
+fastapi
+pydantic
