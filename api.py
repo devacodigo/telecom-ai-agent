@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from telecom_agent import run_agent, conversation_history, SYSTEM_PROMPT
+import logging
 
 # -------------------------------------------------------
 # FastAPI app
