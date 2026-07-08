@@ -34,6 +34,8 @@ class ChatRequest(BaseModel):
 # -------------------------------------------------------
 # Chat endpoint
 # -------------------------------------------------------
+
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 @app.post("/chat")
 async def chat(request: ChatRequest):
     question = request.message
