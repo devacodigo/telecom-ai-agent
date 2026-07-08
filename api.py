@@ -6,6 +6,15 @@ from telecom_agent import run_agent, conversation_history, SYSTEM_PROMPT
 # -------------------------------------------------------
 # FastAPI app
 # -------------------------------------------------------
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s | %(levelname)s | %(message)s',
+    handlers=[
+        logging.FileHandler("agent.log"),  # saves to file
+        logging.StreamHandler()             # also prints to terminal
+    ]
+)
+logger = logging.getLogger(__name__)
 app = FastAPI()
 
 app.add_middleware(
