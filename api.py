@@ -4,6 +4,9 @@ from pydantic import BaseModel
 from telecom_agent import run_agent, conversation_history, SYSTEM_PROMPT
 import logging
 from groq import Groq
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # -------------------------------------------------------
 # FastAPI app
