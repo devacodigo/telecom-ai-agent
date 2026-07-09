@@ -24,7 +24,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["https://telecom-chat-ui.vercel.app"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
