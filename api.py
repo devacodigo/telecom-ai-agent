@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from telecom_agent import run_agent, conversation_history, SYSTEM_PROMPT
 import logging
+from groq import Groq
 
 # -------------------------------------------------------
 # FastAPI app
